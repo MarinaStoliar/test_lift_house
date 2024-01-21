@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:test_lift_house/resources/resources.dart';
 // import 'dart:core';
 
 void main() {
@@ -9,7 +9,6 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final image = AssetImage('images/fullLift.jpg');
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -34,7 +33,7 @@ class MyApp extends StatelessWidget {
                   color: Color(0xFFD9D9D9),
                   border: Border.all(color: Colors.red, width: 1),
                 ),
-                child: Image(image: image),
+                child: Image(image: AssetImage(AppImages.fullLift)),
               ),
               Container(
                 margin: EdgeInsets.only(top: 31),
